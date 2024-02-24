@@ -27,7 +27,7 @@ public class TV {
 
     //Para canal
     public void setCanal(int canal){
-        if(this.estado && (this.canal >= 1 && this.canal <=120)){
+        if(this.estado == true && (this.canal >= 1 && this.canal <=120)){
             this.canal = canal;
         }
     }
@@ -47,7 +47,7 @@ public class TV {
     
     //Para volumen 
     public void setVolumen(int volumen){
-        if(this.estado && (this.volumen >= 0 && this.volumen <7)){
+        if(this.estado == true && (this.volumen >= 0 && this.volumen <7)){
             this.volumen = volumen;
         }
     }
@@ -89,26 +89,26 @@ public class TV {
 
     //Métodos de canal
     public void canalUp(){
-        if(this.estado && (this.canal >= 1 && this.canal <120)){
+        if(this.estado == true && (this.canal >= 1 && this.canal <120)){
             this.canal++;
         }
     }
 
     public void canalDown(){
-        if(this.estado && (this.canal > 1 && this.canal <=120)){
+        if(this.estado == true && (this.canal > 1 && this.canal <=120)){
             this.canal--;
         }
     }
 
     //Métodos de volumen
     public void volumenUp(){
-        if(this.estado && (this.volumen >= 0 && this.volumen <7)){
+        if(this.estado == true && (this.volumen >= 0 && this.volumen <7)){
             this.volumen++;
         }
     }
 
     public void volumenDown(){
-        if(this.estado && (this.volumen > 0 && this.volumen <= 7)){
+        if(this.estado == true && (this.volumen > 0 && this.volumen <= 7)){
             this.volumen--;
         }
     }
